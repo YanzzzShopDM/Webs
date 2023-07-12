@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="icon" href="logo/logo.png" sizes="192x192">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <title>YANZZZY SHOP DM</title>
+  <link rel="stylesheet" type="text/css" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...contoh sha512..." crossorigin="anonymous" />
+</head>
+<body>
+  
+  <div id="navbar">
+    <span class="openbtn" onclick="openNav()">&#9776;</span>
+    <div class="logo">
+      <img src="logo/logo.png" alt="Logo Perusahaan">
+    </div>
+    <div class="search-container">
+      <button type="button" onclick="openSearch()"><i class="fas fa-search"></i></button>
+       <a href="Dashboard/dashboard.html"><i class="fas fa-sign-in-alt"></i></a>
+    </div>
+  </div>
+
+<div id="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="#Event & News"><i class="fas fa-newspaper"></i> Event & News</a>
+    <a href="#"><i class="fas fa-list"></i> Price List</a>
+    <a href="sitemap/Tentang.html"><i class="fas fa-info-circle"></i> About</a>
+    <a href="#"><i class="fas fa-quote-left"></i> TESTIMONI</a>
+    <a href="https://wa.me/6282285152993"><i class="fas fa-phone"></i> Contact Us</a>
+</div>
+
+
+  <div id="search-overlay" class="overlay">
+    <div class="search-popup">
+      <span class="closebtn" onclick="closeSearch()">&times;</span>
+      <input type="text" placeholder="Search...">
+      <button type="submit">Search</button>
+    </div>
+  </div>
+
+    <div class="slideshow-container">
+    <div class="mySlides">
+      <img src="gambar1.jpg" alt="Gambar 1" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="gambar2.jpg" alt="Gambar 2" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="gambar3.jpg" alt="Gambar 3" style="width:100%">
+  </div>
+<div class="tabs" translate="no">
+  <button class="tablink active" onclick="openTab(event, 'games')" translate="no"><i class="fas fa-gamepad"></i> Games</button>
+  <button class="tablink" onclick="openTab(event, 'Event & News')" translate="no"><i class="fas fa-newspaper"></i> Event & News</button>
+  <button class="tablink" onclick="openTab(event, 'Via Login')" translate="no"><i class="fas fa-user-lock"></i> Via Login</button>
+</div>
+<div id="games" class="tabcontent active">
+    <div class="game-container">
+      <div class="game-card">
+        <img src="img/ml.jpg" alt="Mobile Legends">
+        <div class="game-name"translate="no">MOBILE LEGENDS</div>
+        <a href="dm/MobileLegendsID.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/ff.jpg" alt="Free Fire">
+        <div class="game-name"translate="no">GARENA FREE FIRE</div>
+        <a href="dm/freefire.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/gi.jpg" alt="Genshin Impact ">
+        <div class="game-name"translate="no">GENSHIN IMPACT</div>
+        <a href="dm/genshin.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/pubgm.jpg" alt="Pubgm">
+        <div class="game-name">PUBGM</div>
+        <a href="dm/pubgm.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/valorant.jpg" alt="Valorant">
+        <div class="game-name">VALORANT</div>
+        <a href="dm/valo.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/codm.jpg" alt="Call Of Duty">
+        <div class="game-name"translate="no">CALL OF DUTY</div>
+        <a href="dm/codm.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/hsr.jpg" alt="Honkai Star Rail">
+        <div class="game-name"translate="no">HONKAI STAR RAIL</div>
+        <a href="dm/hsr.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/tov.jpg" alt="Tower of fanasy">
+        <div class="game-name"translate="no">TOWER OF FANTASY</div>
+        <a href="dm/tov"class="topup"translate="no">TOP UP</a>
+      </div>
+     <div class="game-card">
+        <img src="img/ss.jpg" alt="Super Sus">
+        <div class="game-name"translate="no">SUPER<br>SUS</div>
+        <a href="dm/ss.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/hi3.jpg" alt="Honkai Impact 3">
+        <div class="game-name"translate="no">HONKAI IMPACT 3</div>
+        <a href="dm/hi3.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/gov.jpg" alt="Goddes Of Victory Nikke">
+        <div class="game-name"translate="no">GODDES OF VICTORY</div>
+        <a href="dm/gov.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/sealm.jpg" alt="Seal M sea">
+        <div class="game-name"translate="no">SEAL M<br>SEA</div>
+        <a href="dm/sealm.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/roo.jpg" alt="Ragnarok Origin">
+        <div class="game-name"translate="no">RAGNAROK ORIGIN</div>
+        <a href="dm/roo.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/rm.jpg" alt="REVELATION M:INFINITE JOURNEY">
+        <div class="game-name"translate="no">REVELATION<br>M</div>
+        <a href="dm/rm.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/lolwr.jpg" alt="League Of Leagens Wild Rif">
+        <div class="game-name"translate="no">LOL :<br>WILD RIFT</div>
+        <a href="dm/lolwr.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/ac.jpg" alt="Ace Racer">
+        <div class="game-name"translate="no">ACE<br></vr>RACER</div>
+        <a href="dm/ac.html"class="topup"translate="no">TOP UP</a>
+    </div>
+      <div class="game-card">
+        <img src="img/aov.jpg" alt="Arena Of Valor">
+        <div class="game-name"translate="no">ARENA OF VALOR</div>
+        <a href="dm/aov.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/bs.jpg" alt="Barwl Star">
+        <div class="game-name"translate="no">BARWL<br>STARS</div>
+        <a href="dm/bs.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/coc.jpg" alt="Clash Of Clans">
+        <div class="game-name"translate="no">CLASH OF CLANS</div>
+        <a href="dm/coc.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/cr.jpg" alt="Clash Royale">
+        <div class="game-name"translate="no">CLASH<br>ROYALE</div>
+        <a href="dm/cr.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/fm.jpg" alt="Football Master 2">
+        <div class="game-name"translate="no">FOOTBALL MASTERS 2</div>
+        <a href="dm/fm.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/sm.jpg" alt="Saudagar Man">
+        <div class="game-name"translate="no">SAUSAGE<br>MAN</div>
+        <a href="dm/sm.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/msw.jpg" alt="Marvel Super War">
+        <div class="game-name"translate="no">MARVEL SUPER WARS</div>
+        <a href="dm/msw.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/opm.jpg" alt="One Punch Man">
+        <div class="game-name"translate="no">ONE PUNCH MAN</div>
+        <a href="dm/opm.html"class="topup"translate="no">TOP UP</a>
+        
+    </div>
+  </div>
+  </div>
+    </div>
+<div id="Via Login" class="tabcontent">
+    <div class="game-container">
+      <div class="game-card">
+        <img src="img/ark.jpg" alt="Arknight">
+        <div class="game-name"translate="no">ARKNIGHT</div>
+        <a href="dm/ark.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/aet.jpg" alt="Aether Gazer">
+        <div class="game-name"translate="no">AETHER GAZER</div>
+        <a href="dm/aet.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/pun.jpg" alt="PUNISHING : GRAY RAVEN">
+        <div class="game-name"translate="no">PUNISHING</div>
+        <a href="dm/pun.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/bdm.jpg" alt="Black Desert Mobile">
+        <div class="game-name"translate="no">BLACK DESERT MOBILE</div>
+        <a href="dm/bdm.html"class="topup"translate="no">TOP UP</a>
+      </div>
+      <div class="game-card">
+        <img src="img/ef.jpg" alt="eFootball">
+        <div class="game-name"translate="no">eFOOTBALL<br>2023</div>
+        <a href="dm/ef.html"class="topup"translate="no">TOP UP</a>
+      </div>
+    <div class="game-card">
+        <img src="img/lolwr.jpg" alt="League Of Leagens Wild Rif">
+        <div class="game-name"translate="no">LOL<br>WILD RIFT</div>
+        <a href="dm/lolwr.html"class="topup"translate="no">TOP UP</a>
+      </div>
+    <div class="game-card">
+        <img src="img/hsr.jpg" alt="Honkai Star Rail">
+        <div class="game-name"translate="no">HONKAI STAR RAIL</div>
+        <a href="dm/hsr.html"class="topup"translate="no">TOP UP</a>
+  </div>
+      <div class="game-card">
+        <img src="img/fifa.png" alt="FIFA">
+        <div class="game-name"translate="no">FIFA<br>2023</div>
+        <a href="dm/fifa.html"class="topup"translate="no">TOP UP</a>
+      </div>
+    <div class="game-card">
+        <img src="img/blue.png" alt="BLUE ARCHIVE">
+        <div class="game-name"translate="no">BLUE<br>ARCHIVE</div>
+        <a href="dm/blue.html"class="topup"translate="no">TOP UP</a>
+      </div>
+    <div class="game-card">
+        <img src="img/lor.jpg" alt="Legends Of Runeterra">
+        <div class="game-name"translate="no">LEGENDS OF RUNEERRA</div>
+        <a href="dm/lor.html"class="topup"translate="no">TOP UP</a>
+</div>
+</div>
+  </div>
+<div id="Event & News" class="tabcontent">
+        <div class="container">
+            <img src="logo/logoml.jpg" alt="Logo Game" class="logo-game">
+            <div class="game-info">
+                <img src="event/eventml.jpg" alt="Game Image" class="game-image">
+                <div class="game-details">
+                    <p class="event-description">Mulai 10/06 - 13/06, tahap baru Event Hadiah Top Up akan hadir!
+
+Top Up Diamond dalam jumlah yang ditentukan selama durasi Event untuk mengklaim hadiah seperti Crystal of Aurora, Efek Eliminasi waktu terbatas ""Roaming Ghost"", Magic Dust, Rare Skin Fragment, dan Premium Choice Chest.
+
+Event ini hanya berlangsung selama 4 hari! Jangan lewatkan hadiah-hadiah menariknya!
+
+#MobileLegendsBangBang</p>
+                    <a href="event.html" class="buy-button"class="topup"translate="no">TOP UP Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<footer>
+  
+    <div id="About"class="logop">
+        <img src="logo/logo.png" alt="Logo Perusahaan">
+        <h4>YANZZZ SHOP DM</h4>
+    </div>
+
+    <div class="content">
+        <p>Nikmati Pengalaman PemTOP UPan<br> Voucher dan Top Up Game<br> Otomatis dan Murah <br>Kapan pun dan di mana pun kamu mau</p>
+
+        <div class="social-media">
+          <p>IKUT KAMI</p>
+            <a href="https://www.facebook.com/adryan.maulana.1a"><img src="sosialmedia/fb.jpg" alt="Facebook"></a>
+            <a href="https://wa.me/6282285152993"><img src="sosialmedia/wa.jpg" alt="WhatsApp"></a>
+            <a href="https://instagram.com/kiting.shopdm?igshid=MzNlNGNkZWQ4Mg=="><img src="sosialmedia/ig.jpg" alt="Instagram"></a>
+            <a href="https://youtube.com/@yanzzz98"><img src="sosialmedia/yt.jpg" alt="YouTube"></a>
+        </div>
+
+        <div class="sitemap">
+            <ul>
+                <li><a href="sitemap/Tentang.html">Tentang</a></li>
+                <li><a href="sitemap/Kebijakan Privasi.html">Kebijakan Privasi</a></li>
+                <li><a href="sitemap/FAQ.html">FAQ</a></li>
+                <li><a href="sitemap/Ketentuan Layanan.html">Ketentuan Layanan</a></li>
+            </ul>
+        </div>
+<div class="container-gerak">
+  <h4>PEMBAYARAN</h4>
+</div>
+<div class="container-gerak">
+  <img class="image-pay" src="pay/dana.jpg" alt="Image 1">
+  <img class="image-pay" src="pay/gopay.jpg" alt="Image 2">
+  <img class="image-pay" src="pay/ovo.jpg" alt="Image 3">
+  </div>
+  <div>
+  <img class="image-pay" src="pay/sp.jpg" alt="Image 4">
+  <img class="image-pay" src="pay/indo.jpg" alt="Image 5">
+  <img class="image-pay" src="pay/alfa.jpg" alt="Image 6">
+  </div>
+  <div>
+  <img class="image-pay" src="pay/bi.jpg" alt="Image 7">
+</div>
+<footer>
+        <div class="copyright">
+            <p>copyright&copy; 2023 yanzzzshopdm. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<div id="overlay" class="overlay">
+    <div class="popup-content">
+    <div class="logoo">
+      <img src="logo/logo.png" alt="Logo Perusahaan">
+    </div>
+    <h2>Selamat datang di Toko kami!</h2>
+<h5>Pengumuman Penting</h5>
+    <p>Harap diperhatikan bahwa Toko Saya Belum mendukung pengisian otomatis dan pembayaran otomatis.</p>
+    <p>Semua proses pengisian dan pembayaran harus dilakukan secara manual melalui whatsapp</p>
+    <p>Jika Anda mengalami masalah atau membutuhkan bantuan, silakan hubungi layanan pelanggan kami.</p>
+    <p>PENGISIAN OTOMATIS DAN PEMBAYARAN OTOMATIS MASIH DALAM TAHAP PENGEMBANGAN</p>
+<a href="https://wa.me/6282285152993" class="wa" target="_blank">WhatsApp</a>
+    <h5>SEKIAN TERIMA KASIH</h5>
+    <h5>Hormat Saya YanzzzShopDM</h5>
+<button class="oke-button" onclick="closePopup()">Oke</button>
+    </div>
+  </div>
+  <script src="home.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

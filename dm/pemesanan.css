@@ -1,0 +1,381 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.cover-photo {
+  width: 100%;
+  height: 120px;
+}
+
+.profile-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: -100px;
+  z-index: 1;
+  text-align: center;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 10%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  margin: 0 auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.rating {
+  text-align: center;
+}
+
+.star {
+  font-size: 30px;
+  color: gold;
+}
+
+.cart {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cart-icon {
+  font-size: 20px;
+  color: black;
+  margin-right: 20px;
+}
+
+#cart-count {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.Layanan,  
+.Nominal,
+.Via{
+  font-size: 25px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.profile-description {
+  color: #666;
+  margin-top: 10px;
+  font-size: 15px;
+  text-align: center;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #eeeeee;
+}
+
+.back-button a {
+  text-decoration: none;
+  color: black;
+}
+
+.back-icon {
+  font-size: 20px;
+}
+
+.logo img {
+  max-width: 30px;
+}
+
+.message-icon a {
+  text-decoration: none;
+  color: #000;
+}
+
+.fa-envelope {
+  font-size: 20px;
+}
+
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #eeeeee;
+  border-radius: 10px;
+}
+
+.form-container h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: black;
+  position: relative;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.menu-list.metode-pembayaran-container {
+  margin-top: 10px;
+}
+
+.form-container #totalbayar,
+.form-container button {
+  margin-top: 11px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="tel"],
+.form-container textarea,
+.form-container select {
+  width: 50%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-container textarea {
+  resize: vertical;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-item {
+  padding: 10px;
+  margin: 5px;
+  text-align: left;
+  background-color: #eeeeee;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.menu-item h3 {
+  margin-top: 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.menu-item p {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.metode-pembayaran-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 2px;
+  flex-wrap: wrap;
+  text-align: left;
+  padding-top: 20px;
+}
+
+button {
+  background-color: lightgreen;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.metode-pembayaran-container img {
+  height: 50px;
+  width: auto;
+}
+
+.selected {
+  background-color: #4CAF50;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+}
+
+.logop {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.logop img {
+  width: 40px;
+}
+
+.content {
+  text-align: center;
+  margin-top: 13px;
+  font-size: 15px;
+}
+
+.social-media {
+  margin-top: 30px;
+  font-size: 10px;
+}
+
+.social-media img {
+  width: 25px;
+  margin: 0 10px;
+}
+
+.sitemap {
+  margin-top: 30px;
+}
+
+.sitemap ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sitemap li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.sitemap a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.container-gerak {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-pay {
+  width: 80px;
+  height: auto;
+  margin: 5px;
+}
+footer .copyright{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 15px;
+  color: black;
+  padding: 10px;
+}
+footer {
+  background-color: #eeeeee;
+}
+@media (max-width: 767px) {
+
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+  }
+
+  .star {
+    font-size: 20px;
+  }
+
+  .form-container input[type="text"],
+  .form-container input[type="tel"],
+  .form-container textarea,
+  .form-container select {
+    width: 100%;
+  }
+
+  .menu-list.metode-pembayaran-container {
+    margin-top: 0;
+  }
+
+  .menu-item {
+    width: 20%;
+  }
+
+  .metode-pembayaran-container {
+    padding-top: 5px;
+  }
+
+  .logop img {
+    width: 30px;
+  }
+
+  .social-media img {
+    width: 20px;
+  }
+}
+
+/* Responsif untuk perangkat desktop */
+@media (min-width: 768px) {
+
+  .profile-picture {
+    width: 200px;
+    height: 200px;
+  }
+
+  .star {
+    font-size: 40px;
+  }
+
+  .form-container input[type="text"],
+  .form-container input[type="tel"],
+  .form-container textarea,
+  .form-container select {
+    width: 60%;
+  }
+
+  .menu-list.metode-pembayaran-container {
+    margin-top: 20px;
+  }
+
+  .menu-item {
+    width: 95px;
+  }
+
+  .metode-pembayaran-container {
+    padding-top: 30px;
+  }
+
+  .logop img {
+    width: 50px;
+  }
+
+  .social-media img {
+    width: 30px;
+  }
+}

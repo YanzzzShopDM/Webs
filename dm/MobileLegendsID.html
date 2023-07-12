@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+ <link rel="icon" href="https://i.postimg.cc/rytFPd8c/logo.png" sizes="192x192">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <title>Pemesanan</title>
+  <link rel="stylesheet" href="pemesanan.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...contoh sha512..." crossorigin="anonymous" />
+</head>
+<body>
+<div class="header">
+  <div class="back-button">
+    <a href="../index.html">
+      <i class="fa fa-chevron-left"></i>
+    </a>
+  </div>
+  <div class="logo">
+    <img src="https://i.postimg.cc/rytFPd8c/logo.png" alt="Logo">
+  </div>
+  <div class="message-icon">
+    <a href="https://wa.me/6282285152993">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </div>
+</div>
+
+<div class="cover-photo"></div>
+  <div class="profile-container">
+    <img class="profile-picture" src="https://i.postimg.cc/T2JL0WTk/Ppml.jpg" alt="Profile Picture">
+    <div class="Layanan">Mobile Leagends</div>
+    <p class="profile-description">1.Masukkan ID (SERVER) <br> 2.Pilih Nominal <br> 3.Pilih Pembayaran<br>4.Tulis nomor WhatsApp yg benar<br>5.Klik Order Now & lakukan Pembayaran<br>6.Tunggu 5 s/d 10 menit diamond masuk ke akun Anda</p>
+    <span>NB: PROSES MANUAL</span>
+</div>
+<div class="rating">
+  <span class="star" onclick="setRating(1)">&#9733;</span>
+  <span class="star" onclick="setRating(2)">&#9733;</span>
+  <span class="star" onclick="setRating(3)">&#9733;</span>
+  <span class="star" onclick="setRating(4)">&#9733;</span>
+  <span class="star" onclick="setRating(5)">&#9733;</span>
+</div>
+<div class="cart">
+  <span class="cart-icon">&#128722;</span>
+  <span id="cart-count">48</span>
+</div>
+</div>
+
+
+  <div class="step">
+    <h2>Lengkapi Data</h2>
+    <div class="form-container centered">
+      <!-- Form untuk melengkapi data -->
+      <label for="userid"></label>
+      <input type="text" id="userid" name="userid" placeholder="USER ID" required>
+
+      <label for="zoneid"></label>
+      <input type="text" id="zoneid" name="zoneid" placeholder="ZONE ID" required>
+      
+      <label for="nickname"></label>
+      <input type="text" id="nickname" name="nickname" placeholder="Masukkan Nickname" required>
+
+      
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="Nominal">Pilih Nominal</div>
+    <div class="menu-list">
+      <!-- Daftar pilihan nominal -->
+<div class="menu-item diamond" data-name="14 (13+1) Diamond" data-price="4798" code-product="ml14">
+        <h3>14 (13+1) <br> DIAMOND</h3>
+        <p>Rp.4,798</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="step">
+    <h2>Data Tambahan</h2>
+    <div class="form-container centered">
+      <!-- Form untuk data tambahan -->
+      <label for="nomorwa">Nomor WhatsApp</label>
+      <input type="tel" id="nomorwa" name="nomorwa" placeholder="Masukkan Nomor WhatsApp" required>
+    </div>
+  </div>
+  <div class="step">
+    <div class="Via">Pilih Pembayaran</div>
+    <div class="menu-list metode-pembayaran-container">
+      <div class="menu-item" data-metode="QRIS" data-feeQris="10">
+        <h3>QRIS</h3>
+        <p><img src="https://i.postimg.cc/m24NgLMC/qris.png" alt="Qris"></p>
+      </div>
+      <div class="menu-item" data-metode="DANA" data-feeDana="83">
+        <h3>DANA</h3>
+        <p><img src="https://i.postimg.cc/KjzvBBF3/dana.png" alt="Dana"></p>
+      </div>
+      <div class="menu-item" data-metode="GOPAY" data-feeGopay="83">
+        <h3>GOPAY</h3>
+        <p><img src="https://i.postimg.cc/JndWwgVt/gopay.png" alt="Gopay"></p>
+      </div>
+      <div class="menu-item" data-metode="OVO" data-feeOvo="83">
+        <h3>OVO</h3>
+        <p><img src="https://i.postimg.cc/bNL1Xcmq/ovo.png" alt="Ovo"></p>
+      </div>
+      <div class="menu-item" data-metode="SHOPEEPAY" data-feeShopeepay="83">
+        <h3>SHOPEE<br>PAY</h3>
+        <p><img src="https://i.postimg.cc/NMp23Rxp/spay.png" alt="Shopeepay"></p>
+    </div>
+      <div class="menu-item" data-metode="BCA" data-feeBCA="96">
+        <h3>BCA</h3>
+        <p><img src="https://i.postimg.cc/8z06MNFy/bca.png" alt="BCA"></p>
+    </div>
+  </div>
+
+  <div class="step">
+    <h2>Beli</h2>
+    <div class="form-container centered">
+      <label for="totalbayar">Harga</label>
+      <input type="text" id="totalbayar" name="totalbayar" placeholder="Harga" readonly>
+
+      <button class="buy-button" onclick="placeOrder()">Beli</button>
+    </div>
+  </div>
+<footer>
+    <div id="About"class="logop">
+        <img src="https://i.postimg.cc/rytFPd8c/logo.png" alt="Logo Perusahaan">
+        <h4>YANZZZ SHOP DM</h4>
+    </div>
+
+    <div class="content">
+        <p>Nikmati Pengalaman Pembelian<br> Voucher dan Top Up Game<br> Otomatis dan Murah <br>Kapan pun dan di mana pun kamu mau</p>
+
+        <div class="social-media">
+          <p>IKUT KAMI</p>
+            <a href="https://www.facebook.com/adryan.maulana.1a"><img src="https://i.postimg.cc/wMSSJTtd/fb.png" alt="Facebook"></a>
+            <a href="https://wa.me/6282285152993"><img src="https://i.postimg.cc/1t1sxBRQ/wa.png" alt="WhatsApp"></a>
+            <a href="<https></https>://instagram.com/kiting.shopdm?igshid=MzNlNGNkZWQ4Mg=="><img src="https://i.postimg.cc/pLPsSFM6/ig.png" alt="Instagram"></a>
+            <a href="https://youtube.com/@yanzzz98"><img src="https://i.postimg.cc/vmkD45Qq/yt.png" alt="YouTube"></a>
+        </div>
+
+        <div class="sitemap">
+            <ul>
+                <li><a href="../sitemap/Tentang.html">Tentang</a></li>
+                <li><a href="#">Kebijakan Privasi</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Ketentuan Layanan</a></li>
+            </ul>
+        </div>
+<div class="container-gerak">
+  <h4>PEMBAYARAN</h4>
+</div>
+<div class="container-gerak">
+  <img class="image-pay" src="https://i.postimg.cc/3JP7TQHP/dana.png" alt="Image 1">
+  <img class="image-pay" src="https://i.postimg.cc/8zSvz3R0/gopay.png" alt="Image 2">
+  <img class="image-pay" src="https://i.postimg.cc/hvskQNJ1/ovo.png" alt="Image 3">
+  </div>
+  <div>
+  <img class="image-pay" src="https://i.postimg.cc/T1jDVJG9/sp.png" alt="Image 4">
+  <img class="image-pay" src="https://i.postimg.cc/Vvt3D5H4/indo.png" alt="Image 5">
+  <img class="image-pay" src="https://i.postimg.cc/26LkNkKL/alfa.png" alt="Image 6">
+  </div>
+  <div>
+  <img class="image-pay" src="https://i.postimg.cc/Y9PvQDJY/bi.png" alt="Image 7">
+</div>
+<footer>
+        <div class="copyright">
+            <p>copyright&copy; 2023 yanzzzshopdm. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+  <script src="pemesanan.js"></script>
+      </div></body>
+</html>
